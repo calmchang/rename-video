@@ -1,0 +1,18 @@
+{
+  "name": "rename-video",
+  "version": "1.0.0",
+  "description": "将目录下的所有视频文件以{集数}为名称重新命名",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "video",
+    "rename"
+  ],
+  "bin": {
+    "rename-video": "index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
