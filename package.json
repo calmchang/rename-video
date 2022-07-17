@@ -1,6 +1,6 @@
 {
   "name": "rename-video",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "将目录下的所有视频文件以{集数}为名称重新命名",
   "main": "index.js",
   "scripts": {
