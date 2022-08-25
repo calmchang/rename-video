@@ -2,9 +2,14 @@
 
 let fs = require('fs');
 const path = require('path');
+var minimist = require('minimist');
+var package = require('./package.json');
+
 const cwd = process.cwd();
 const exts = ['.mp4', '.mkv','.avi','.rmvb','.mov','.m4v','.wmv','.asf','.asx','.3gp','.flv'];
 const root = cwd;
+
+var options = minimist(process.argv.slice(2));
 
 
 function rename(file){
@@ -38,4 +43,8 @@ function fileList(folder) {
   });
 }
 
-fileList(root);
+if(options.v){
+  console.log('v'+package.version);
+}else{
+  fileList(root);
+}
